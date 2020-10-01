@@ -84,7 +84,7 @@
 				</a>
 				<a href="#" class="flex items-center relative hover:text-gray-400">
 					<img
-						src="https://avatars0.githubusercontent.com/u/31770433?s=60&amp;v=4"
+						src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gj9xrzvvf4j301o01oa9t.jpg"
 						class="w-5 h-5 rounded-full"
 						alt="avatar"
 					/>
@@ -512,7 +512,7 @@
 						<a href="#"
 							><img
 								class="w-6 h-6 rounded-full"
-								src="https://avatars1.githubusercontent.com/u/499550?s=64&amp;v=4"
+								src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gj9xue412yj301s01sgld.jpg"
 								alt="avatar"
 						/></a>
 						<a href="#" class="font-semibold hover:underline">yyx990803</a>
@@ -1059,7 +1059,7 @@
 								class="w-8 border-2 border-white rounded-full"
 							/>
 							<img
-								src="https://avatars1.githubusercontent.com/u/68525424?s=88&v=4"
+								src="https://s3.amazonaws.com/uifaces/faces/twitter/vitorleal/128.jpg"
 								alt="avatar"
 								class="w-8 border-2 border-white rounded-full"
 							/>
@@ -1105,7 +1105,7 @@
 					<div class="flex items-center flex-wrap mt-2">
 						<a href="#"
 							><img
-								src="https://avatars1.githubusercontent.com/u/499550?s=64&v=4"
+								src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gj9xue412yj301s01sgld.jpg"
 								alt="avatar"
 								class="w-8 rounded-full mr-2 mt-2"
 						/></a>

@@ -1,5 +1,7 @@
-const mdPlugin = require('vite-plugin-markdown')
+import mdPlugin from 'vite-plugin-markdown'
 
-module.exports = {
+export default {
+  base: './',
+  assetsDir: 'assets',
   plugins: [mdPlugin({ mode: ['html'] })]
 }
