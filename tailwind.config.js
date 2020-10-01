@@ -10,38 +10,38 @@ module.exports = {
     ],
   },
   theme: {
-    typography: (theme) => ({
-      default: {
-        css: {
-          a: {
-            color: theme('colors.blue.600'),
-            textDecoration: false
-          },
-          img: {
-            display: 'inline-block'
-          },
-          h1: {
-            fontSize: '2em',
-            marginTop: '0',
-            marginBottom: '0',
-            lineHeight: '1',
-            fontWeight: '700',
-          },
-          code: {
-            backgroundColor: theme('colors.gray.200'),
-            padding: '.2em .4em',
-            borderRadius: '6px',
-            fontWeight: '300',
-          },
-          'code::before': {
-            content: '',
-          },
-          'code::after': {
-            content: '',
-          },
-        }
-      }
-    }),
+    // typography: (theme) => ({
+    //   default: {
+    //     css: {
+    //       a: {
+    //         color: theme('colors.blue.600'),
+    //         textDecoration: false
+    //       },
+    //       img: {
+    //         display: 'inline-block'
+    //       },
+    //       h1: {
+    //         fontSize: '2em',
+    //         marginTop: '0',
+    //         marginBottom: '0',
+    //         lineHeight: '1',
+    //         fontWeight: '700',
+    //       },
+    //       code: {
+    //         backgroundColor: theme('colors.gray.200'),
+    //         padding: '.2em .4em',
+    //         borderRadius: '6px',
+    //         fontWeight: '300',
+    //       },
+    //       'code::before': {
+    //         content: '',
+    //       },
+    //       'code::after': {
+    //         content: '',
+    //       },
+    //     }
+    //   }
+    // }),
     extend: {
       colors: {
         'gray-700-github': '#404448',
@@ -98,6 +98,5 @@ module.exports = {
     textColor: ['responsive', 'hover', 'focus', 'group-hover'],
   },
   plugins: [
-    require('@tailwindcss/typography'),
   ],
 }

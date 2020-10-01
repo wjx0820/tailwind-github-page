@@ -921,7 +921,7 @@
 					class="readme-container rounded-md border border-gray-400 px-4 py-4 mt-5"
 				>
 					<h4 class="font-semibold">README.md</h4>
-					<div v-html="html" class="prose max-w-none px-4"></div>
+					<div v-html="html" class="markdown-body max-w-none px-4"></div>
 				</div>
 				<!-- end readme-container  -->
 			</div>
@@ -1277,6 +1277,7 @@
 
 <script>
 	import { html } from "./md/readme-vuejs.md"
+
 	// console.log(html)
 	export default {
 		name: "App",
@@ -1288,3 +1289,13 @@
 		},
 	}
 </script>
+
+<style>
+	.markdown-body {
+		box-sizing: border-box;
+		min-width: 200px;
+		max-width: 980px;
+		margin: 0 auto;
+		padding: 45px;
+	}
+</style>

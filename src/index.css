@@ -3,3 +3,15 @@
 @import "tailwindcss/components";
 
 @import "tailwindcss/utilities";
+
+img {
+	display: inline-block;
+}
+
+.readme-container ul {
+	list-style-type: disc;
+}
+
+.readme-container ul ul {
+	list-style-type: circle;
+}
