@@ -12,7 +12,7 @@
 						></path>
 					</svg>
 				</a>
-				<div class="relative">
+				<div class="hidden lg:block relative">
 					<input
 						type="text"
 						class="rounded bg-gray-700-github placeholder-gray-400 w-72 px-3 py-1"
@@ -105,7 +105,9 @@
 				</a>
 			</div>
 		</nav>
-		<div class="repo-stats flex items-center justify-between px-8 py-4">
+		<div
+			class="repo-stats flex flex-col lg:flex-row items-center justify-between px-8 py-4"
+		>
 			<div class="flex">
 				<svg
 					class="w-4 fill-current text-gray-700"
@@ -125,7 +127,7 @@
 					>
 				</div>
 			</div>
-			<div class="flex space-x-2">
+			<div class="flex space-x-2 mt-4 lg:mt-0">
 				<div class="flex text-xs">
 					<button
 						class="border border-gray-400 hover:bg-gray-200 rounded rounded-r-none px-3 py-1 flex items-center space-x-1"
@@ -275,7 +277,7 @@
 					<div class="text-xs rounded-lg bg-gray-300 px-2 ml-1">37</div>
 				</a>
 			</li>
-			<li>
+			<li class="hidden lg:block">
 				<a
 					href="#"
 					class="flex items-center border-b-2 border-transparent hover:border-gray-400 transition ease-in duration-300 px-4 pb-3"
@@ -295,7 +297,7 @@
 					<span class="ml-2">Actions</span>
 				</a>
 			</li>
-			<li>
+			<li class="hidden lg:block">
 				<a
 					href="#"
 					class="flex items-center border-b-2 border-transparent hover:border-gray-400 transition ease-in duration-300 px-4 pb-3"
@@ -315,7 +317,7 @@
 					<span class="ml-2">Projects</span>
 				</a>
 			</li>
-			<li>
+			<li class="hidden lg:block">
 				<a
 					href="#"
 					class="flex items-center border-b-2 border-transparent hover:border-gray-400 transition ease-in duration-300 px-4 pb-3"
@@ -335,7 +337,7 @@
 					<span class="ml-2">Wiki</span>
 				</a>
 			</li>
-			<li>
+			<li class="hidden lg:block">
 				<a
 					href="#"
 					class="flex items-center border-b-2 border-transparent hover:border-gray-400 transition ease-in duration-300 px-4 pb-3"
@@ -355,7 +357,7 @@
 					<span class="ml-2">Security</span>
 				</a>
 			</li>
-			<li>
+			<li class="hidden lg:block">
 				<a
 					href="#"
 					class="flex items-center border-b-2 border-transparent hover:border-gray-400 transition ease-in duration-300 px-4 pb-3"
@@ -377,8 +379,8 @@
 			</li>
 		</ul>
 		<!-- end repo-nav -->
-		<div class="container mx-auto my-8 px-4 flex">
-			<div class="file-explorer-container w-3/4 mr-8">
+		<div class="container mx-auto my-8 px-4 flex flex-col lg:flex-row">
+			<div class="file-explorer-container w-full lg:w-3/4 lg:mr-8">
 				<div class="branch-navigation flex items-center justify-between">
 					<div class="flex items-center space-x-3">
 						<button
@@ -411,7 +413,10 @@
 								></path>
 							</svg>
 						</button>
-						<a href="#" class="group flex items-center space-x-2 py-1">
+						<a
+							href="#"
+							class="hidden lg:flex items-center space-x-2 py-1 group"
+						>
 							<svg
 								class="fill-current text-gray-600 group-hover:text-blue-600 w-4"
 								text="gray"
@@ -430,7 +435,10 @@
 								<span>branches</span>
 							</span>
 						</a>
-						<a href="#" class="py-1 flex items-center space-x-2 group">
+						<a
+							href="#"
+							class="hidden lg:flex py-1 items-center space-x-2 group"
+						>
 							<svg
 								class="fill-current text-gray-600 group-hover:text-blue-600 w-4"
 								text="gray"
@@ -450,7 +458,7 @@
 							</span>
 						</a>
 					</div>
-					<div class="flex items-center space-x-2">
+					<div class="hidden lg:flex items-center space-x-2">
 						<button
 							class="border border-gray-400 rounded-md px-3 py-1 hover:bg-gray-200 flex items-center space-x-2"
 						>
@@ -529,12 +537,12 @@
 						<a
 							href="#"
 							class="font-mono text-xs text-gray-600 hover:underline hover:text-blue-600 ml-2 hidden lg:block"
-							>da070bd</a
+							>1abcb2c</a
 						>
 						<a
 							href="#"
 							class="text-gray-600 hover:underline hover:text-blue-600 ml-2"
-							>4 days ago</a
+							>12 days ago</a
 						>
 						<a href="#" class="flex items-center ml-3 group">
 							<svg
@@ -550,8 +558,8 @@
 								></path>
 							</svg>
 							<span class="ml-1 group-hover:text-blue-600">
-								<span class="font-semibold">3,040 </span>
-								<span>commits</span>
+								<span class="font-semibold">2,703 </span>
+								<span class="hidden lg:inline">commits</span>
 							</span>
 						</a>
 					</div>
@@ -580,10 +588,10 @@
 						</div>
 						<div class="w-6/12 truncate hidden lg:block">
 							<a href="#" class="hover:underline hover:text-blue-600"
-								>Update issues template</a
+								>docs: add indefinite article to bug fix sentence (#1878)</a
 							>
 						</div>
-						<div class="w-4/12 lg:w-2/12 text-right">11 days ago</div>
+						<div class="w-4/12 lg:w-2/12 text-right">2 months age</div>
 					</div>
 					<div class="flex justify-between px-4 py-2 hover:bg-gray-200">
 						<div class="w-4/12 flex items-center">
@@ -600,15 +608,15 @@
 								></path>
 							</svg>
 							<a href="#" class="hover:underline hover:text-blue-600 ml-3"
-								>__tests__</a
+								>.vscode</a
 							>
 						</div>
 						<div class="w-6/12 truncate hidden lg:block">
 							<a href="#" class="hover:underline hover:text-blue-600"
-								>Remove stale test</a
+								>workflow: cross platform vscode jest debugging (#414)</a
 							>
 						</div>
-						<div class="w-4/12 lg:w-2/12 text-right">4 days ago</div>
+						<div class="w-4/12 lg:w-2/12 text-right">4 months ago</div>
 					</div>
 					<div class="flex justify-between px-4 py-2 hover:bg-gray-200">
 						<div class="w-4/12 flex items-center">
@@ -625,41 +633,15 @@
 								></path>
 							</svg>
 							<a href="#" class="hover:underline hover:text-blue-600 ml-3"
-								>dist</a
+								>packages</a
 							>
 						</div>
 						<div class="w-6/12 truncate hidden lg:block">
 							<a href="#" class="hover:underline hover:text-blue-600"
-								>Add empty .npmignore so dist files are distributed with
-								releases</a
+								>types: fix Typescript 4.1 compile error (#2219)</a
 							>
 						</div>
-						<div class="w-4/12 lg:w-2/12 text-right">3 years ago</div>
-					</div>
-					<div class="flex justify-between px-4 py-2 hover:bg-gray-200">
-						<div class="w-4/12 flex items-center">
-							<svg
-								class="w-4 fill-current text-blue-400"
-								color="blue-3"
-								aria-label="Directory"
-								viewBox="0 0 16 16"
-								role="img"
-							>
-								<path
-									fill-rule="evenodd"
-									d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3h-6.5a.25.25 0 01-.2-.1l-.9-1.2c-.33-.44-.85-.7-1.4-.7h-3.5z"
-								></path>
-							</svg>
-							<a href="#" class="hover:underline hover:text-blue-600 ml-3"
-								>jest</a
-							>
-						</div>
-						<div class="w-6/12 truncate hidden lg:block">
-							<a href="#" class="hover:underline hover:text-blue-600"
-								>Use `process.env.JEST_WORKER_ID`</a
-							>
-						</div>
-						<div class="w-4/12 lg:w-2/12 text-right">15 months ago</div>
+						<div class="w-4/12 lg:w-2/12 text-right">3 days ago</div>
 					</div>
 					<div class="flex justify-between px-4 py-2 hover:bg-gray-200">
 						<div class="w-4/12 flex items-center">
@@ -681,10 +663,35 @@
 						</div>
 						<div class="w-6/12 truncate hidden lg:block">
 							<a href="#" class="hover:underline hover:text-blue-600"
-								>Prevent source maps from being generated</a
+								>test: improve expect.toHaveBeenWarned() message</a
 							>
 						</div>
-						<div class="w-4/12 lg:w-2/12 text-right">21 days ago</div>
+						<div class="w-4/12 lg:w-2/12 text-right">last month</div>
+					</div>
+					<div class="flex justify-between px-4 py-2 hover:bg-gray-200">
+						<div class="w-4/12 flex items-center">
+							<svg
+								class="w-4 fill-current text-blue-400"
+								color="blue-3"
+								aria-label="Directory"
+								viewBox="0 0 16 16"
+								role="img"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3h-6.5a.25.25 0 01-.2-.1l-.9-1.2c-.33-.44-.85-.7-1.4-.7h-3.5z"
+								></path>
+							</svg>
+							<a href="#" class="hover:underline hover:text-blue-600 ml-3"
+								>test-dts</a
+							>
+						</div>
+						<div class="w-6/12 truncate hidden lg:block">
+							<a href="#" class="hover:underline hover:text-blue-600"
+								>fix(types): fix using tuple type as EmitsOptions (#2160)</a
+							>
+						</div>
+						<div class="w-4/12 lg:w-2/12 text-right">15 days ago</div>
 					</div>
 					<div class="flex justify-between px-4 py-2 hover:bg-gray-200">
 						<div class="w-4/12 flex items-center">
@@ -708,31 +715,6 @@
 							<a href="#" class="hover:underline hover:text-blue-600"
 								>Only wrap with variants if rules don't already contain any
 								variants</a
-							>
-						</div>
-						<div class="w-4/12 lg:w-2/12 text-right">4 days ago</div>
-					</div>
-					<div class="flex justify-between px-4 py-2 hover:bg-gray-200">
-						<div class="w-4/12 flex items-center">
-							<svg
-								class="w-4 fill-current text-blue-400"
-								color="blue-3"
-								aria-label="Directory"
-								viewBox="0 0 16 16"
-								role="img"
-							>
-								<path
-									fill-rule="evenodd"
-									d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3h-6.5a.25.25 0 01-.2-.1l-.9-1.2c-.33-.44-.85-.7-1.4-.7h-3.5z"
-								></path>
-							</svg>
-							<a href="#" class="hover:underline hover:text-blue-600 ml-3"
-								>stubs</a
-							>
-						</div>
-						<div class="w-6/12 truncate hidden lg:block">
-							<a href="#" class="hover:underline hover:text-blue-600"
-								>Generate responsive variants for container by default</a
 							>
 						</div>
 						<div class="w-4/12 lg:w-2/12 text-right">4 days ago</div>
@@ -880,15 +862,15 @@
 								></path>
 							</svg>
 							<a href="#" class="hover:underline hover:text-blue-600 ml-3"
-								>tailwind.css</a
+								>tsconfig.json</a
 							>
 						</div>
 						<div class="w-6/12 truncate hidden lg:block">
 							<a href="#" class="hover:underline hover:text-blue-600"
-								>Undo accidental changes to CDN build process</a
+								>chore: remove unnecessary path in tsconfig.json</a
 							>
 						</div>
-						<div class="w-4/12 lg:w-2/12 text-right">7 months ago</div>
+						<div class="w-4/12 lg:w-2/12 text-right">5 months ago</div>
 					</div>
 					<div class="flex justify-between px-4 py-2 hover:bg-gray-200">
 						<div class="w-4/12 flex items-center">
@@ -905,15 +887,15 @@
 								></path>
 							</svg>
 							<a href="#" class="hover:underline hover:text-blue-600 ml-3"
-								>utilities.css</a
+								>package.json</a
 							>
 						</div>
 						<div class="w-6/12 truncate hidden lg:block">
 							<a href="#" class="hover:underline hover:text-blue-600"
-								>Move CSS files to root for easier imports</a
+								>release: v3.0.0</a
 							>
 						</div>
-						<div class="w-4/12 lg:w-2/12 text-right">2 years ago</div>
+						<div class="w-4/12 lg:w-2/12 text-right">13 days ago</div>
 					</div>
 				</div>
 				<!-- end file-explorer  -->
@@ -926,8 +908,8 @@
 				<!-- end readme-container  -->
 			</div>
 			<!-- end file-explorer-container -->
-			<div class="sidebar w-1/4">
-				<div class="about">
+			<div class="sidebar w-full lg:w-1/4">
+				<div class="about mt-6 lg:mt-0">
 					<h4 class="text-base font-semibold">About</h4>
 					<p class="text-base mt-4">Repo for Vue 3.0</p>
 
@@ -1237,9 +1219,9 @@
 			<!-- end sidebar -->
 		</div>
 		<footer
-			class="container mx-auto text-xs border-t border-gray-400 py-10 flex items-center justify-between"
+			class="container mx-auto text-xs border-t border-gray-400 py-10 flex flex-col lg:flex-row items-center justify-between"
 		>
-			<ul class="flex items-center space-x-6">
+			<ul class="flex items-center space-x-6 lg:space-x-12">
 				<li>&copy; 2020 GitHub, Inc.</li>
 				<li><a href="#" class="text-blue-600 hover:underline">Terms</a></li>
 				<li><a href="#" class="text-blue-600 hover:underline">Privacy</a></li>
@@ -1261,7 +1243,7 @@
 					</svg>
 				</a>
 			</div>
-			<ul class="flex items-center space-x-6">
+			<ul class="flex items-center space-x-6 lg:space-x-12 mt-4 lg:mt-0">
 				<li>
 					<a href="#" class="text-blue-600 hover:underline">Contact Github</a>
 				</li>
