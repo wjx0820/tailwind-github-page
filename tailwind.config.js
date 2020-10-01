@@ -3,22 +3,42 @@ module.exports = {
     // removeDeprecatedGapUtilities: true,
     // purgeLayersByDefault: true,
   },
-  purge: [],
+  purge: {
+    mode: 'all',
+    content: [
+      './**/*.vue',
+    ],
+  },
   theme: {
     typography: (theme) => ({
       default: {
         css: {
           a: {
             color: theme('colors.blue.600'),
+            textDecoration: false
           },
           img: {
             display: 'inline-block'
           },
-          hr: {
-            borderColor: theme('colors.gray.400'),
-            marginTop: '2em',
-            marginBottom: '2em',
-          }
+          h1: {
+            fontSize: '2em',
+            marginTop: '0',
+            marginBottom: '0',
+            lineHeight: '1',
+            fontWeight: '700',
+          },
+          code: {
+            backgroundColor: theme('colors.gray.200'),
+            padding: '.2em .4em',
+            borderRadius: '6px',
+            fontWeight: '300',
+          },
+          'code::before': {
+            content: '',
+          },
+          'code::after': {
+            content: '',
+          },
         }
       }
     }),
@@ -33,6 +53,36 @@ module.exports = {
         '200': '50rem',
       },
       fontFamily: {
+        sans: [
+          '-apple-system',
+          'BlinkMacSystemFont',
+          '"Segoe UI"',
+          'Roboto',
+          '"Helvetica Neue"',
+          'Arial',
+          '"Noto Sans"',
+          'sans-serif',
+          '"Apple Color Emoji"',
+          '"Segoe UI Emoji"',
+          '"Segoe UI Symbol"',
+          '"Noto Color Emoji"',
+        ],
+        'source-sans-pro': [
+          'Source Sans Pro',
+          'Roboto',
+          '-apple-system',
+          'BlinkMacSystemFont',
+          '"Segoe UI"',
+          '"Helvetica Neue"',
+          'Arial',
+          '"Noto Sans"',
+          'sans-serif',
+          '"Apple Color Emoji"',
+          '"Segoe UI Emoji"',
+          '"Segoe UI Symbol"',
+          '"Noto Color Emoji"',
+        ],
+        serif: ['Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
         mono: [
           'Menlo',
           'Monaco',
